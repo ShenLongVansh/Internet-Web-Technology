@@ -1,0 +1,18 @@
+/*We use link tag for external css since through this we can make use of same css in multiple html documents and hence faster response*/
+h1{
+    color: red;
+    text-align: center;
+    text-decoration: capitalize;
+}
+h2{
+    color: blue;
+    text-align: center;
+}
+h3{
+    color: goldenrod;
+    text-align: center;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/19052150/pexels-photo-19052150/free-photo-of-fashionable-young-man-standing-outside-on-the-background-of-palm-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}

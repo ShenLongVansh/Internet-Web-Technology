@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:complexType name="Job"> <!-- This means it can -->
+    <xs:sequence> <!--It means to appear in this specific order-->
+      <xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="location" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="category" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="skills" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="salary" type="xs:decimal" minOccurs="0" maxOccurs="1" />
+      <xs:element name="company" type="Company" minOccurs="1" maxOccurs="1" />
+      <xs:element name="postedDate" type="xs:date" minOccurs="1" maxOccurs="1" />
+      <xs:element name="applicationDeadline" type="xs:date" minOccurs="0" maxOccurs="1" />
+      <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Company">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="website" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="jobs" type="Jobs" />
+
+  <xs:complexType name="Jobs">
+    <xs:sequence>
+      <xs:element ref="Job" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

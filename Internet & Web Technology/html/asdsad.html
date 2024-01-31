@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Trading Platform</title>
+</head>
+<body>
+  <h1>Welcome to Simple Trade!</h1>
+  <h2>Market Overview</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Last Price</th>
+        <th>Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AAPL</td>
+        <td>175.20</td>
+        <td style="color: green;">+2.10 (1.2%)</td>
+      </tr>
+      <tr>
+        <td>TSLA</td>
+        <td>385.00</td>
+        <td style="color: red;">-5.75 (-1.4%)</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Place Your Trade</h2>
+  <form action="/trade" method="post">
+    <label for="symbol">Symbol:</label>
+    <input type="text" name="symbol" id="symbol" placeholder="Enter stock symbol">
+    <label for="action">Buy/Sell:</label>
+    <select name="action" id="action">
+      <option value="buy">Buy</option>
+      <option value="sell">Sell</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" id="quantity" min="1" max="100" placeholder="Enter quantity">
+    <button type="submit">Execute Trade</button>
+  </form>
+  <p>Note: This is a simplified example for educational purposes only. Real online trading platforms are much more complex and require proper registration and verification.</p>
+</body>
+</html>

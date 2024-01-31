@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_Stuff</title>
+    <button onclick="myFunction()">Try it</button>
+    <script language = "JavaScript">
+        count = 5;  //global variable
+        var a = 4;  
+        // defining a function
+        function fcount(){
+            count += 5;
+            a+=4;   //local variable
+            document.write("<b> Inside function count = "+count+"<br>");
+            document.write("<b> Inside function a = "+a+"<br>");
+            }
+        
+        function showmessage(firstname,lastname){    //parameters function
+            //Alert creates a pop up window 
+            alert("Hello "+firstname+" "+lastname);
+        }
+        function myFunction(){  // prompt function (pop up window)
+            let text;
+            let person = prompt("Please enter your name:","Firstname Lastname");
+            if (person == null || person == ""){
+                text = "User cancelled the prompt.";
+            }
+            else{
+                text = "Hello "+person+"! How are you today?";
+            }
+        }
+    </script>
+</head>
+<body><script>
+    document.write("<b> Outside function count = "+count+"<br>");
+    document.write("<b> Outside function a = "+a+"<br>");
+    fcount();   //calling function
+    showmessage("Saksham","Gupta");  //arguments function
+    myFunction();
+</script>
+</body>
+</html>

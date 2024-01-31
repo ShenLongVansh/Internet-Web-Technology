@@ -1,0 +1,37 @@
+A) XML = eXtensible Markup Language
+It's standard is defined by W3C.
+It's used for creating structured data documents.
+It was created to transport and stored data.
+
+XML tags are not predefined.
+
+B)
+The following 2 serves the purpose of defining structure and rules for XML documnets.
+XML with a document type definitions(DTD) or XML Schemas is self descriptive.
+
+DTD = oldest method, unique syntax
+
+DTD is used only for compatibility with the older systems.
+
+C)
+Using XML with Applications
+
+1. Data Storage and Sharing: XML is commonly used to store and exchange data between different applications and systems. Its structured format makes it easy to parse and process data, and its extensibility allows for the creation of custom data formats tailored to specific needs.
+
+2. Configuration Management: XML is often used to store configuration settings for various applications and systems. Its hierarchical structure makes it easy to organize and manage complex configuration data.
+
+3. Web Services: XML plays a crucial role in web services, particularly in data exchange between different web applications and services. XML-based protocols like SOAP and RESTful services utilize XML to define message formats and data structures.
+
+4. Document Management: XML is used to create and manage structured documents, such as technical manuals, reports, and research papers. Its semantic markup allows for easy identification and retrieval of specific information within the documents.
+
+5. E-commerce and Business Processes: XML is extensively used in e-commerce and business processes, such as purchase orders, invoices, and financial transactions. Its standardized formats facilitate data exchange between different business entities.
+
+6. Content Management Systems (CMS): XML is often used as the data storage format for content management systems. It provides a structured way to store and manage website content, making it easy to update and publish content.
+
+7. User Interfaces (UI): XML can be used to define user interfaces for applications, particularly in the context of mobile development. Its declarative nature allows for easy separation of data and presentation.
+
+8. Data Visualization: XML can be used as the data source for data visualization tools, allowing for the creation of charts, graphs, and other visual representations of data.
+
+9. Translation and Localization: XML-based tools can be used for translation and localization of software and content, as its structured format facilitates the identification and replacement of text elements.
+
+10. Research and Development: XML is used in various research and development fields, such as bioinformatics, where its ability to represent complex data structures is valuable.

@@ -1,0 +1,7 @@
+Javascript is just a dynamic type(int, float etc in function)/client based scripting language.
+
+We are gonna use it inside html files through 3 ways
+
+1) Body tag
+2) Head tag
+3) In external file i.e. JS

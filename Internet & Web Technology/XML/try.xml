@@ -1,0 +1,6 @@
+<?xml version = "1.0"?>  <!--small letters since case sensitive-->
+<contact-info> <!--Markup link-->
+    <name>Harry <!--text or characters--></name>
+    <company>W3Schools</company>
+    <phone>1234567890</phone>
+</contact-info>

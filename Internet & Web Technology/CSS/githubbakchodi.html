@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Fun Interactive File</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #FF0000;
+    }
+    
+    p {
+      color: #0000FF;
+    }
+    
+    .interactive {
+      font-size: 24px;
+      cursor: pointer;
+      transition: transform 10s ;
+    }
+    
+    .interactive:hover {
+        transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Fun Interactive File!</h1>
+  <p>Click on the text below to see some magic:</p>
+  
+  <div class="interactive" onclick="showMagic()">
+    <p>This is an interactive paragraph!</p>
+  </div>
+  
+  <script>
+    function showMagic() {
+      alert("Abracadabra! You just witnessed some magic!");
+    }
+  </script>
+</body>
+</html>
